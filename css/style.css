@@ -411,6 +411,12 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: var(--link-hover-color);
 }
+.current-btn {
+  color: var(--color-white);
+  background: var(--link-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--link-hover-color);
+}
 .prtf {
   padding-top: 94px;
   padding-bottom: 94px;
