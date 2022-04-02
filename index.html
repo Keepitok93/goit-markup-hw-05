@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Модуль 4 Векторная графика</title>
+    <title>Модуль 5 Позиционирование, переходы, анимация</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -75,9 +75,25 @@
             <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="btn">Заказать услугу</button>
+          <button type="button" class="btn" data-modal-open>
+            Заказать услугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <p>Русский военный корабль, иди на хуй!</p>
+              <button type="button" class="btn-closed-modal" data-modal-close>
+                <svg class="icon-closed">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1-1"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- <button data-modal-open>Открытие модального окна</button> -->
 
       <!--Наши аспекты-->
       <section class="about section">
@@ -138,6 +154,7 @@
       </section>
 
       <!--Чем мы занимаемся-->
+
       <section class="doing section">
         <div class="container">
           <h2 class="about-h2">Чем мы занимаемся</h2>
@@ -149,6 +166,9 @@
                 height="294"
                 alt="Верстка продукта"
               />
+              <div class="item-text">
+                <p>Десктопные приложения</p>
+              </div>
             </li>
             <li class="about-item-img">
               <img
@@ -157,6 +177,9 @@
                 height="294"
                 alt="Оптимизация сайта"
               />
+              <div class="item-text">
+                <p>Мобильные приложения</p>
+              </div>
             </li>
             <li class="about-item-img">
               <img
@@ -165,6 +188,9 @@
                 height="294"
                 alt="Дизайн проекта"
               />
+              <div class="item-text">
+                <p>Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -485,5 +511,6 @@
         </div>
       </section>
     </footer>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
